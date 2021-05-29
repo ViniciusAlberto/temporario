@@ -1,0 +1,154 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Vinicius\\Download\\maverick-master\\maverick-master\\Source\\Maverick.TmdbAdapter\\Maverick.TmdbAdapter.csproj": {}
+  },
+  "projects": {
+    "D:\\Vinicius\\Download\\maverick-master\\maverick-master\\Source\\Maverick.Domain\\Maverick.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Vinicius\\Download\\maverick-master\\maverick-master\\Source\\Maverick.Domain\\Maverick.Domain.csproj",
+        "projectName": "Maverick.Domain",
+        "projectPath": "D:\\Vinicius\\Download\\maverick-master\\maverick-master\\Source\\Maverick.Domain\\Maverick.Domain.csproj",
+        "packagesPath": "C:\\Users\\Vinicius Oliveira\\.nuget\\packages\\",
+        "outputPath": "D:\\Vinicius\\Download\\maverick-master\\maverick-master\\Source\\Maverick.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "D:\\Vinicius\\Download\\maverick-master\\maverick-master\\Source\\NuGet.Config",
+          "C:\\Users\\Vinicius Oliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Otc.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "Otc.DomainBase.Exceptions": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Vinicius\\Download\\maverick-master\\maverick-master\\Source\\Maverick.TmdbAdapter\\Maverick.TmdbAdapter.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Vinicius\\Download\\maverick-master\\maverick-master\\Source\\Maverick.TmdbAdapter\\Maverick.TmdbAdapter.csproj",
+        "projectName": "Maverick.TmdbAdapter",
+        "projectPath": "D:\\Vinicius\\Download\\maverick-master\\maverick-master\\Source\\Maverick.TmdbAdapter\\Maverick.TmdbAdapter.csproj",
+        "packagesPath": "C:\\Users\\Vinicius Oliveira\\.nuget\\packages\\",
+        "outputPath": "D:\\Vinicius\\Download\\maverick-master\\maverick-master\\Source\\Maverick.TmdbAdapter\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "D:\\Vinicius\\Download\\maverick-master\\maverick-master\\Source\\NuGet.Config",
+          "C:\\Users\\Vinicius Oliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Vinicius\\Download\\maverick-master\\maverick-master\\Source\\Maverick.Domain\\Maverick.Domain.csproj": {
+                "projectPath": "D:\\Vinicius\\Download\\maverick-master\\maverick-master\\Source\\Maverick.Domain\\Maverick.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Otc.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Otc.Networking.Http.Client.Abstractions": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "Refit": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
