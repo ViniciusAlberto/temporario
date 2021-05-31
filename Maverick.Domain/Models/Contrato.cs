@@ -8,5 +8,9 @@ namespace Maverick.Domain.Models
         public Valores Valores { get; set; }
 
         public ContatoCliente ContatoCliente {get;set;}
+
+        public bool Sucesso { get; set; }
+
+        public bool Tentativa { get; set; }
     }
 }

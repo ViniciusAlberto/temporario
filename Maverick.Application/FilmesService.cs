@@ -35,9 +35,37 @@ namespace Maverick.Application
                 throw new ArgumentNullException(nameof(gerenciadorSMSAdapter));
         }
 
-        public Task<bool> EnviarSMSContratosRefinanciamentosAsync()
+        public async Task<bool> EnviarSMSContratosRefinanciamentosAsync()
         {
-            throw new NotImplementedException();
+            try
+            {
+                var contratosAptosEnviarSMS = await contratoRefinanciamentoDbAdapter
+                                                .BuscarContratosAptosEnvioSMSAsync();
+
+                var mensagemSMS = await parametrosDbAdapter.BuscarMensagemSMSAsync();
+
+                foreach(var contratoApto in contratosAptosEnviarSMS)
+                {
+                    var mensagemPreenchida = MontarMensagem(contratoApto, mensagemSMS);
+
+                    contratoApto.Sucesso = await gerenciadorSMSAdapter
+                        .EnviarMensagemSMSAsync(mensagemPreenchida, contratoApto.ContatoCliente.Celular);
+
+                    contratoApto.Tentativa = true;
+                }
+            }
+            catch(Exception e)
+            {
+
+                return false;
+            }
+        }
+
+        private string MontarMensagem(Contrato contratoApto, string mensagem)
+        {
+            //TODO:FAZER
+
+            return string.Format(mensagem, contratoApto.Valores.ValorParcela);
         }
        
     }
